@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f8e4d8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            position: relative;
+            width: 80%;
+            max-width: 400px;
+            height: 450px;
+            background-color: #fff;
+            border: 5px solid #ff69b4;
+            border-radius: 15px;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .message {
+            padding: 20px;
+            text-align: center;
+            background-color: #ff69b4;
+            color: #fff;
+        }
+
+        .photos {
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .photo {
+            width: 45%;
+            height: 190px;
+            /* text-align: center; */
+            margin: 10px auto;
+            background-position: center top;
+            border-radius: 8px;
+            background-size: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .card {
+                width: 90%;
+            }
+
+            .photo {
+                width: 48%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="message">
+            <h2>Happy 7th Birthday!</h2>
+            <p>Dear Kanak &hearts; , Wishing you a day filled with joy, laughter, and lots of surprises. May all your dreams come
+                true! 🎉🎂</p>
+        </div>
+        <div class="photos">
+            <!-- Add your 10 photos here -->
+            <div class="photo" style="background-image: url(/20221231_121321.jpg); "></div>
+            <!-- <div class="photo" style="background-image: url('photo2.jpg');"></div> -->
+            <!-- Add more photos as needed -->
+        </div>
+    </div>
+</body>
+
+</html>
